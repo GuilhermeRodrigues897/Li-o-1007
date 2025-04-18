@@ -15,4 +15,101 @@ b=850
 c=1
 x=b/a
 escreva("imprima a quantidade necessária de litros para realizar à viagem", x, "\n")
+1134
+inteiro codigo
+     inteiro qtdAlcool, qtdGasolina, qtdDiesel
+     
+     qtdAlcool = 0
+     qtdGasolina = 0
+     qtdDiesel = 0
+     
+     faca{
+         escreva("Qual o combustivel? ")
+         leia(codigo)
+         se(codigo == 1){
+             //escreva("escolheu alcool\n")
+             qtdAlcool++
+         }
+         senao se (codigo == 2){
+             //("escolheu gasolina\n")
+             qtdGasolina++
+             
+         }
+         senao se (codigo == 3){
+             //escreva("escolheu diesel\n")
+             qtdDiesel++
+         }
+     } enquanto (codigo != 4)
+     
+       escreva("MUITO OBRIGADO\n")
+       escreva("Alcool: ",qtdAlcool,"\n")
+       escreva("Gasolina: ",qtdGasolina,"\n")
+       escreva("Diesel: ",qtdDiesel,"\n")
 1037
+funcao inicio() {
+		real valor
+		escreva("Digite um valor")
+		leia(valor)
+		se(valor >==0.0 e valor <==27.0) {
+		escreva("Intervalo [25,50]\n")
+	}
+	senao se(valor >27.0 e valor <=52.00){
+	escreva("Intervalo (25,50]\n")
+    }
+    senao se(valor>52.0 e valor <==77.00){
+    	escreva("Intervalo (50,75]\n")
+    }
+    senao se(valor>75 e valor <==100){
+    	escreva("Intervalo (70,100]\n")
+    }
+    senao{
+        escreva("Fora de intervalo\n")
+
+1038
+funcao inicio() {
+		inteiro cod, qtd
+		real total
+		
+		escreva("qual o codigo do produto? ")
+		leia(cod)
+		escreva("qual a quantidade? ")
+		leia(qtd)
+		
+		se (cod == 1){
+		    total = qtd * 4.0
+		}
+		senao se (cod == 2){
+		    total = qtd * 4.50
+		}
+		senao se (cod == 3){
+		    total = qtd * 5.0
+		}
+		senao se (cod == 4){
+		    total = qtd * 2.00
+		}
+		senao{
+		    total = qtd * 1.50
+		}
+		escreva("Total: R$ ",total,"\n")
+1073
+funcao inicio() {
+		inteiro num, limite
+		
+		escreva("Vai ate quando? ")
+		leia(limite)
+		num = 2
+		enquanto (num <=limite){
+		    escreva(num,"^2 = ",(num*num),"\n")
+		    num = num +2
+		}
+1114
+funcao inicio() {
+		inteiro senha
+		faca{
+		    escreva("digite a senha:")
+		    leia(senha)
+		    se (senha != 2002){
+		        escreva("Senha invalida!\n")
+		    }
+		} enquanto(senha != 2002)
+		escreva("Acesso Permitido!\n")
